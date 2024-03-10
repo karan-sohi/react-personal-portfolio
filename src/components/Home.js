@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Home() {
   return (
-    <div className="container">
+    <div className="home-container">
       <div id="main-header">
         <h1>Karan.dev</h1>
         <ul id="title-items">
@@ -16,7 +16,7 @@ function Home() {
           </li>
           <li className="title-item">
             <a href="#contact">Contact</a>
-          </li>
+          </li> 
         </ul>
       </div>
       <div id="home-body">
