@@ -4,45 +4,59 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ContactMe() {
+  const redirectEmail = () => {
+    window.location.href = "mailto:<deepkaran2490@gmail.com>";
+  };
+
+  const redirectLinkedIn = () => {
+    window.open(
+      "https://www.linkedin.com/in/karandeep-singh-3770501b2/",
+      "_blank"
+    );
+  };
+
+  const redirectGithub = () => {
+    window.open("https://github.com/karan-sohi", "_blank");
+  };
   return (
-    <div className="contact-me">
+    <section id="contact-me">
       <div className="contact-me-heading">
         <p>Get In Touch</p>
         <h1>Contact Me</h1>
       </div>
       <div className="contact-me-content">
         <div className="contact-mail">
-          <MailIcon className="contact-icon"></MailIcon>
-          <a href="mailto:<EMAIL>">deepkaran2490@gmail.com</a>
+          <MailIcon onClick={redirectEmail} className="contact-icon"></MailIcon>
+          <a href="mailto:<deepkaran2490@gmail.com>">Email</a>
         </div>
         <div className="contact-linkedin">
-          <LinkedInIcon className="contact-icon"></LinkedInIcon>
-          <a href="https://www.linkedin.com/in/deepkaran-singh-0001/">
-            Karandeep Singh
+          <LinkedInIcon onClick={redirectLinkedIn} className="contact-icon"></LinkedInIcon>
+          <a href="https://www.linkedin.com/in/karandeep-singh-3770501b2/" target="_blank">
+            Karandeep
           </a>
         </div>
         <div className="contact-github">
-          <GitHubIcon className="contact-icon"></GitHubIcon>
-          <a href="https://github.com/deepkaran2490">Karan</a>
+          <GitHubIcon onclick={redirectGithub} className="contact-icon"></GitHubIcon>
+          <a href="https://github.com/karan-sohi" target="_blank">karan-sohi</a>
         </div>
       </div>
       <div className="bottom-nav">
         <ul id="title-items">
           <li className="title-item">
-            <a href="#about">About</a>
+            <a href="#about-me">About</a>
           </li>
           <li className="title-item">
-            <a href="#projects">Projects</a>
+            <a href="#my-projects">Projects</a>
           </li>
           <li className="title-item">
-            <a href="#contact">Contact</a>
+            <a href="#contact-me">Contact</a>
           </li>
         </ul>
       </div>
       <div className="footer">
         <p>Copyright © 2024 Karandeep Singh. All Rights Reserved.</p>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -5,7 +5,7 @@ import SchoolIcon from '@mui/icons-material/School';
 
 function AboutMe() {
   return (
-    <div className="about-me">
+    <section id="about-me">
       <div className="about-me-heading">
         <p>Get to Know More</p>
         <h1>About Me</h1>
@@ -35,7 +35,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

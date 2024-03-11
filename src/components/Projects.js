@@ -4,7 +4,7 @@ import { PROJECTS_DATA } from '../projects-data';
 
 function Projects() {
   return (
-    <div className="my-projects">
+    <section id="my-projects">
         <div className="my-projects-heading">
             <p>Browse My Recent</p>
             <h1>Projects</h1>
@@ -14,7 +14,7 @@ function Projects() {
             return <Project key={project.id} projectData = {project}></Project>
         })}
         </div>
-    </div>
+    </section>
   )
 }
 
