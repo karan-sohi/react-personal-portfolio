@@ -18,12 +18,15 @@ body {
 #main-header-desktop {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 15%;
+  align-items: center;
+  padding: 2rem 15%;  
+  font-size: 1.3rem;
   /* background-color: aqua; */
 }
 
 #main-header-mobile {
   display: none;
+
 }
 
 #title-items {
@@ -35,10 +38,14 @@ body {
   margin: 20px;
   list-style: none;
   text-decoration: none;
+  color: black;
 }
 
 .title-item a {
   text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 #my-img img {
@@ -52,6 +59,7 @@ body {
   right: 19%;
   background-color: white;
   font-size: large;
+  color: black;
 }
 
 .menu-links > li{
@@ -61,6 +69,7 @@ body {
 
 .menu-links > li > a {
   text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,7 +80,7 @@ body {
   #home-body {
     display: flex;
     justify-content: space-between;
-    padding: 5rem;
+    padding: 3.5rem;
     text-align: center;
     width: 55%;
     margin: auto;
@@ -80,6 +89,10 @@ body {
   .my-projects-body {
     display: flex;
     justify-content: space-around;
+  }
+
+  .more-projects {
+    text-align: right;
   }
 }
 
@@ -108,10 +121,14 @@ body {
   #my-img img {
     height: 200px;
     width: 200px;
-  }
+  } 
 
   .project {
     width: 30%;
+  }
+
+  .more-projects {
+    text-align: center;
   }
 }
 
@@ -150,6 +167,8 @@ body {
 
 .contact-buttons > div > a > button:hover {
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .social-media-buttons {
@@ -191,7 +210,7 @@ body {
 /* Projects Page  */
 
 #my-projects {
-  padding-top: 40px;
+  padding-top: 10px;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -219,9 +238,31 @@ body {
   color: white;
 }
 
+.more-projects {
+  padding: 10px;
+}
+
+
+.explore-projects {
+  padding: 20px 40px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-right: 1rem;
+}
+
+.explore-projects:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 .project img {
   width: 90%;
-  height: 300px;
+  height: 250px;
 }
 
 /* Contact Me Page */
@@ -272,4 +313,16 @@ body {
 
 .footer {
   padding: 50px;
+}
+
+
+/* All Projects Page */
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+}
+
+.project-items > div {
+  flex-basis: 20%;
 }

@@ -1,17 +1,29 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
 import Projects from "./components/Projects";
+import AllProjects from "./components/AllProjects";
 
 function App() {
   return (
-    <div className="App">
-      <Home></Home>
-      <AboutMe></AboutMe>
-      <Projects></Projects>
-      <ContactMe></ContactMe>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <AboutMe></AboutMe>
+              <Projects></Projects>
+              <ContactMe></ContactMe>
+            </>
+          }
+        />
+        <Route path="/projects" element={<AllProjects></AllProjects>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
