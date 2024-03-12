@@ -320,9 +320,9 @@ body {
 .project-items {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem  ;
 }
 
 .project-items > div {
-  flex-basis: 20%;
+  flex-basis: 250px;
 }
